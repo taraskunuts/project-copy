@@ -1,6 +1,14 @@
-.container {
+.conteiner {
   width: 100%;
-margin: 0 auto;
-padding-left: 375px;
-padding-right: 375px;  
-} 
+  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+      max-width: 480px;
+      padding: 0 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+      padding: 0 375px;
+  }
+}
