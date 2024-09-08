@@ -1,0 +1,29 @@
+h1, h2, ul, li, h3, a, div, p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+input {
+    outline: none;
+} 
