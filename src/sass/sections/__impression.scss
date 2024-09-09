@@ -7,7 +7,18 @@
 background-color: $modded-background;
 
   &__title {
-    width: 970px;
+    width: 300px;
+    color: #ED1C24;
+
+text-align: center;
+font-family: $montserrat-alternas;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+    @media screen and (min-width:1200px){
+      width: 970px;
     color: #ed1c24;
     text-align: center;
     font-family: $montserrat-alternas;
@@ -15,38 +26,57 @@ background-color: $modded-background;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    }
   }
 
   &__box-image {
-    width: 303px;
-    height: 513px;
+width: 119px;
+height: 199px;
   }
 
   &__text {
-    width: 970px;
+    width: 300px;
     color: #221112;
     text-align: center;
     font-family: $montserrat;
-    font-size: 22px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 35px; /* 159.091% */
+    line-height: 26px;
   }
 
   &__travelholder {
-    width: 1820px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
+    
+    @media screen  and (min-width: 480px){
+      min-width: 300px;
+      
+    padding-left: 10px;
+    padding-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    }
+
+    @media screen and (min-width: 1200px){
+      width: 1820px;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 0px;
     padding-right: 100px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("../../images/impression-images/dekstop/background-dekstop@1x.webp");
+    background-image: url("../images/impression-images/dekstop/background-dekstop@1x.webp");
+    }
   }
 
   &__subtitle {
-    width: 830px;
+     width: 300px;
     color: #221112;
     text-align: center;
     font-family: $montserrat-alternas;
@@ -57,9 +87,17 @@ background-color: $modded-background;
   }
 
   &__image {
-    width: 770px;
+
+      min-width: 300px;
+
+    border-radius: 24px;
+
+
+    @media screen and (min-width: 1200px){
+      width: 770px;
     height: 434px;
     border-radius: 24px;
+    }
   }
 
   &__travel-top {
@@ -72,11 +110,14 @@ background-color: $modded-background;
   }
 
   &__travel {
-    display: flex;
+    display: none;
+     @media screen and (min-width: 1200px){
+      display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 135px;
+     }
   }
 
   &__travel-bottom {
@@ -116,7 +157,6 @@ font-size: 22px;
 font-style: normal;
 font-weight: 400;
 line-height: 36px;
-padding-right: 10px;
   }
 
   &__bottom{
