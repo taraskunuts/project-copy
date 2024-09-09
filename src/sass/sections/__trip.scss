@@ -1,5 +1,6 @@
 .trip{
     padding-bottom: 150px;
+    padding-top: 131px;
     &__title{
         color: #221112;
         font-family: "Montserrat Alternates";
@@ -7,6 +8,8 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;    
+        width: 570px;
+        margin-bottom: 78px;
     }
 
     &__title-color{
@@ -28,6 +31,7 @@ line-height: 30px; /* 150% */
     }
 
 &__part{
+    width: 270px;
     color: #221112;
 font-family: Montserrat;
 font-size: 20px;
