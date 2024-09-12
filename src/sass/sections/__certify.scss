@@ -1,0 +1,55 @@
+.certify{
+    background: #ED1C24;
+}
+.container{
+    padding-top: 147px;
+    padding-bottom: 76px;
+}
+.certify-tittle{
+
+    color: #FFF;
+font-family: "Montserrat Alternates";
+font-size: 52px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+max-width: 568px;
+}
+.certify-text{
+    margin-bottom: 99px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px; /* 175% */
+    max-width: 568px;
+ 
+}
+.certify-form{
+    display: flex;
+height: 80px;
+padding: 22px 0px 22px 30px;
+justify-content: flex-end;
+align-items: center;
+border-radius: 70px;
+background: #FFF;
+border: none;
+box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 0.05);
+    color: #221112;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 225% */
+
+
+}
+.certify-label{
+
+}
+.certify-list{
+    display: flex;
+    gap: 30px;
+
+}
