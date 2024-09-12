@@ -2,12 +2,9 @@
     background: #ED1C24;
     padding-top: 140px;
     padding-bottom: 139px;
-    background-image: url(../images/imagine-images/desktop/dackground-desktop1x.webp);
+    background-image: url(../images/imagine-images/desktop/dackground-desktop1x.webp), url(../images/imagine-images/desktop/tree-desktop1x.webp);
     background-repeat: no-repeat;
-    width: 1920px;
+    background-size: cover, contain;
 
-    &__tree1x {
-        width: 466px;
-height: 510px;
-    }
+
 }
