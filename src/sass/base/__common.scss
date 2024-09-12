@@ -1,6 +1,14 @@
 .container {
+  outline: solid green;
   width: 100%;
+  max-width: 320px;
 margin: 0 auto;
-padding-left: 375px;
-padding-right: 375px;  
+padding-left: 10px;
+padding-right: 10px;  
+   
+    @media screen and (min-width: 1200px){
+      max-width: 1200px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
 } 
