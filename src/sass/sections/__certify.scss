@@ -1,43 +1,55 @@
 .certify{
     background: #ED1C24;
-}
-.container{
-    padding-top: 147px;
+    
+    padding-top: 73px;
     padding-bottom: 76px;
+    @media screen and (min-width:480px){
+        display: flex;
+        flex-direction: column;
+    }
 }
+
 .certify-tittle{
 
     color: #FFF;
 font-family: "Montserrat Alternates";
-font-size: 52px;
+font-size: 22px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
 max-width: 568px;
+@media screen and (min-width:1200px){
+    font-size: 52px;
+}
 }
 .certify-text{
     margin-bottom: 99px;
     color: #FFF;
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 35px; /* 175% */
+    line-height: 26px; /* 175% */
     max-width: 568px;
+    @media screen and (min-width:1200px){
+        font-size: 20px;
+line-height: 35px; /* 162.5% */
+    }
  
 }
 .certify-form{
-    display: flex;
-height: 80px;
+    width: 255px;
+    border-radius: 70px;
+background: #FFF;
+box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 0.05);
+display: flex;
 padding: 22px 0px 22px 30px;
 justify-content: flex-end;
 align-items: center;
-border-radius: 70px;
-background: #FFF;
-border: none;
 box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 0.05);
     color: #221112;
     font-family: Montserrat;
+    text-align: flex-start;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -52,4 +64,36 @@ box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 0.05);
     display: flex;
     gap: 30px;
 
+}
+.certify-btn{
+    display: flex;
+    width: 270px;
+    height: 80px;
+    padding: 22px 0px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 70px;
+border: 3px solid #FFF;
+color: #FFF;
+text-align: center;
+font-family: Montserrat;
+font-size: 22px;
+font-style: normal;
+font-weight: 900;
+line-height: 36px; /* 163.636% */
+}
+.certify-img{
+    width: 441px;
+height: 527px;
+flex-shrink: 0;
+}
+.certify-box{
+    display: flex;
+    align-items: center;
+    gap: 141px;
+    margin-bottom: 25px;
+}
+.certify-boxx{
+    display: flex;
+    flex-direction: column;
 }
