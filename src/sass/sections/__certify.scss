@@ -1,99 +1,150 @@
-.certify{
-    background: #ED1C24;
-    
+.certify {
+  background: #ed1c24;
+
+  padding-top: 64px;
+  padding-bottom: 76px;
+  @media screen and (min-width:1200px){
     padding-top: 73px;
-    padding-bottom: 76px;
-    @media screen and (min-width:480px){
-        display: flex;
-        flex-direction: column;
-    }
+  }
+
 }
 
-.certify-tittle{
-
-    color: #FFF;
-font-family: "Montserrat Alternates";
-font-size: 22px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-max-width: 568px;
-@media screen and (min-width:1200px){
+.certify-tittle {
+  color: #fff;
+  font-family: "Montserrat Alternates";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  max-width: 568px;
+  @media screen and (min-width: 1200px) {
     font-size: 52px;
+  }
 }
-}
-.certify-text{
+.certify-text {
+  margin-bottom: 50px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 175% */
+  max-width: 568px;
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 35px; /* 162.5% */
     margin-bottom: 99px;
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px; /* 175% */
-    max-width: 568px;
-    @media screen and (min-width:1200px){
-        font-size: 20px;
-line-height: 35px; /* 162.5% */
-    }
- 
-}
-.certify-form{
-    width: 255px;
-    border-radius: 70px;
-background: #FFF;
-box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 0.05);
-display: flex;
-padding: 22px 0px 22px 30px;
-justify-content: flex-end;
-align-items: center;
-box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 0.05);
-    color: #221112;
-    font-family: Montserrat;
-    text-align: flex-start;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 36px; /* 225% */
-
-
+  }
 }
 .certify-label{
 
 }
+.certify-form {
+width: 300px;
+
+  border-radius: 70px;
+  background: #fff;
+  box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  padding: 22px 0px 22px 30px;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 0.05);
+  color: #221112;
+  font-family: Montserrat;
+  text-align: flex-start;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 225% */
+  @media screen and (min-width:1200px){
+    width: 255px;
+}
+}
 .certify-list{
+
+    gap: 24px;
     display: flex;
-    gap: 30px;
+    align-items: center;
+    // justify-content: center;
+    flex-direction: column;
+    @media screen and (min-width: 1200px) {
+        gap: 30px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
 
 }
-.certify-btn{
+
+
+
+
+
+.certify-btn {
+    margin-top: 16px;
     display: flex;
-    width: 270px;
-    height: 80px;
-    padding: 22px 0px;
-    justify-content: center;
+    width: 320px;
+    // padding: 64px 10px 80px 10px;
+    flex-direction: column;
     align-items: center;
-    border-radius: 70px;
-border: 3px solid #FFF;
-color: #FFF;
+    gap: 40px;
+    color: #FFF;
 text-align: center;
 font-family: Montserrat;
-font-size: 22px;
+font-size: 16px;
 font-style: normal;
 font-weight: 900;
-line-height: 36px; /* 163.636% */
+line-height: 36px; /* 225% */
+border-radius: 70px;
+border: 3px solid #FFF;
+@media screen and (min-width:1200px){
+    margin: 0;
+    display: flex;
+  width: 270px;
+  height: 80px;
+  padding: 22px 0px;
+  justify-content: center;
+align-items: center;
+border-radius: 70px;
+border: 3px solid #FFF;
 }
-.certify-img{
+  
+}
+.certify-pic{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.certify-img {
+    display: flex;
+  width: 203px;
+  height: 243px;
+  @media screen and (min-width: 1200px) {
     width: 441px;
-height: 527px;
-flex-shrink: 0;
+    height: 527px;
+    flex-shrink: 0;
+  }
 }
-.certify-box{
+.certify-box {
+
+
+  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
     gap: 141px;
     margin-bottom: 25px;
+    flex-direction: row-reverse;
+  }
 }
-.certify-boxx{
-    display: flex;
-    flex-direction: column;
+.certify-boxx {
+    margin-top: 40px;
+    width: 300px;
+  display: flex;
+  flex-direction: column;
+@media screen and (min-width:1200px) {
+    width: 568px;
+}
+ 
 }
