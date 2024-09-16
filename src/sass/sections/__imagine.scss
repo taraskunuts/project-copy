@@ -1,88 +1,158 @@
 .imagine {
-    background: #ED1C24;
-    padding-top: 140px;
-    padding-bottom: 139px;
-    background-image: url(../images/imagine-images/desktop/dackground-desktop1x.webp), url(../images/imagine-images/desktop/tree-desktop1x.webp);
-    background-repeat: no-repeat;
-    background-size: 1864, 461, 466px;
-    
+   background: #ED1C24;
+   padding-top: 140px;
+   padding-bottom: 139px;
+   background-image: url(../../images/imagine-images/mobile/dackground-mobile1x.webp), url(../../images/imagine-images/mobile/tree-mobile1x.webp );
+   background-repeat: no-repeat;
+   background-size: 1864, 461, 466px;
 
-     &__title {
-        color: #FFF;
-        font-family: $montserrat-alternas;
-        font-size: 52px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-     }
+   @media screen and (min-width: 1200px) {
+      background-image: url(../images/imagine-images/desktop/dackground-desktop1x.webp), url(../images/imagine-images/desktop/tree-desktop1x.webp);
+   }
 
-     &__description {
-        color: #FFF;
-        font-family: $montserrat;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 35px; /* 175% */
-     }
 
-     &__description2 {
+   &__title {
       color: #FFF;
-      font-family: $montserrat;
-      font-size: 20px;
+      font-family: "Montserrat Alternates";
+      font-size: 32px;
       font-style: normal;
-      font-weight: 400;
-      line-height: 35px; /* 175% */
-     }
+      font-weight: 700;
+      line-height: normal;
 
-     &__spann {
+
+      @media screen and (min-width: 1200px) {
+         color: #FFF;
+         font-family: $montserrat-alternas;
+         font-size: 52px;
+         font-style: normal;
+         font-weight: 700;
+         line-height: normal;
+      }
+   }
+
+   &__description {
       color: #FFF;
       font-family: Montserrat;
-      font-size: 20px;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      /* 175% */
+
+
+      @media screen and (min-width: 1200px) {
+         color: #FFF;
+         font-family: $montserrat;
+         font-size: 20px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: 35px;
+         /* 175% */
+      }
+   }
+
+   &__description2 {
+      color: #FFF;
+      font-family: Montserrat;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      /* 175% */
+
+      @media screen and (min-width: 1200px) {
+         color: #FFF;
+         font-family: $montserrat;
+         font-size: 20px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: 35px;
+         /* 175% */
+      }
+   }
+
+   &__spann {
+      color: #FFF;
+      font-family: Montserrat;
+      font-size: 16px;
       font-style: normal;
       font-weight: 900;
-      line-height: 55px;
-     }
+      line-height: 28px;
 
-     &__text {
-      width: 570px;
+      @media screen and (min-width: 1200px) {
+         color: #FFF;
+         font-family: Montserrat;
+         font-size: 20px;
+         font-style: normal;
+         font-weight: 900;
+         line-height: 55px;
+      }
+   }
+
+   &__text {
+      width: 290px;
       margin-left: auto;
-     }
 
-     &__euro {
-      padding-top: 58px;
+      @media screen and (min-width: 1200px) {
+         width: 570px;
+      }
+   }
+
+   &__euro {
+      padding-top: 48px;
+      padding-left: 45px;
+
+
+      @media screen and (min-width: 1200px) {
+         padding-top: 58px;
       padding-left: 182px;
       padding-right: 183px;
-     
-     }
+      }
 
-     &__box {
+   }
+
+   &__box {
       background-color: white;
       border-radius: 26px;
-      width: 570px;
-      height: 329px;
-      margin-left: auto;
+      width: 284px;
+      height: 310px;
+      margin-right: 12px;
       margin-top: 45px;
-     }
 
-     &__description-euro {
+      @media screen and (min-width: 1200px) {
+         width: 570px;
+         height: 329px;
+      }
+   }
+
+   &__description-euro {
       color: #221112;
       text-align: center;
       font-family: Montserrat;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
-      line-height: 28px; /* 175% */
-     }
+      line-height: 28px;
+      /* 175% */
+   }
 
-     &__boc-description {
-      width: 341px;
+   &__boc-description {
+      width: 240px;
+      margin-top: 30px;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 19px;
-     }
 
-     &__button {
-      background-color: #ED1C24;
+      @media screen and (min-width: 1200px) {
+         width: 341px;
+      margin-top: 19px;
+      }
+   }
+
+   &__button {
+      display: none;
+
+      @media screen and (min-width: 1200px) {
+         background-color: #ED1C24;
       border-radius: 70px;
       color: #FFF;
       text-align: center;
@@ -90,7 +160,8 @@
       font-size: 22px;
       font-style: normal;
       font-weight: 900;
-      line-height: 36px; /* 163.636% */
+      line-height: 36px;
+      /* 163.636% */
       padding-top: 22px;
       padding-bottom: 22px;
       padding-left: 61px;
@@ -99,37 +170,66 @@
       margin-right: auto;
       display: block;
       margin-top: 26px;
-     }
+      }
+   }
 
-     &__box-png {
-      height: 420px;
-      padding-right: 100px;
-      padding-top: 180px;
-      
-     }
+   &__box-png {
+      width: 200px;
+      padding-left: 47px;
+      padding-top: 80px;
+      margin-bottom: 46px;
 
-     &__container {
+
+      @media screen and (min-width: 1200px) {
+         width: 634px;
+         padding-top: 180px;
+      }
+
+   }
+
+   &__container {
       display: flex;
-     }
+      flex-direction: column;
 
-     &__ball1 {
-      width: 199px;
-      height: 180px;
+      @media screen and (min-width: 1200px) {
+         display: flex;
+         flex-direction: row;
+      }
+   }
+
+   &__ball1 {
+      width: 63px;
+      height: 58px;
       position: absolute;
-      padding-top: 480px;
-     }
+      padding-top: 188px;
+      padding-left: 30px;
 
-     &__ball2 {
-      width: 126px;
-      height: 112px;
+      @media screen and (min-width: 1200px) {
+         width: 199px;
+         height: 180px;
+         padding-top: 480px;
+      }
+   }
+
+   &__ball2 {
+      width: 42px;
+      height: 36px;
+
       position: absolute;
-      padding-top: 420px;
-     }
+      padding-top: 164px;
+      padding-left: 32px;
 
-     &__images1 {
+      @media screen and (min-width: 1200px) {
+         width: 126px;
+         height: 112px;
+         padding-top: 420px;
+      }
+   }
+
+   &__images1 {
       position: relative;
       margin-right: 100px;
-     }
+   }
 
-  
+
 }
