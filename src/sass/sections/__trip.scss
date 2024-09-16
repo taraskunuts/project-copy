@@ -2,12 +2,23 @@
     padding-bottom: 150px;
     padding-top: 131px;
 
-@media screen and (min-width:480px) {
-    padding-top: 48px;
+    @media screen and (min-width:320px) {
+        padding-top: 48px;
+        padding-bottom: 80px;
+    }
+
+
+    @media screen and (min-width:480px) {
+        padding-top: 48px;
+        padding-bottom: 80px;
+    }
+
+@media screen and (min-width:1200px) {
+    padding-bottom: 150px;
+    padding-top: 131px; 
 }
-@media screen and (min-width:320px) {
-    padding-top: 48px;
-}
+
+
 
     &__title{
         color: #221112;
