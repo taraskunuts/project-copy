@@ -5,6 +5,13 @@
   justify-content: center;
   flex-direction: column;
 background-color: $modded-background;
+padding-bottom: 80px;
+padding-top: 48px;
+
+@media screen and (min-width: 1200px){
+  padding-bottom: 148px;
+padding-top: 123px;
+}
 
 &__container{
   display: flex;
@@ -128,7 +135,6 @@ line-height: normal;
   }
 
   &__travel-top {
-    margin-top: 48px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -139,14 +145,11 @@ line-height: normal;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 135px; 
-       margin-top: 79px;
     }
   }
 
   &__travel-ireland{
-    margin-top: 48px;
-    margin-bottom: 32px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,7 +160,6 @@ line-height: normal;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 135px;
     }
   }
 
@@ -168,7 +170,6 @@ line-height: normal;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 135px;
      }
   }
 
@@ -252,13 +253,6 @@ line-height: 36px;
 
   }
 
-  &__bottom{
-    height: 0px;
-    @media screen and (min-width: 1200px){
-      height: 148px;
-    }
-  }
-
   &__span{
     display: block;
     color: #221112;
@@ -267,7 +261,7 @@ font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: 36px;
-  }
+margin-left: 8px;  }
 
   &__button{
     display: flex;
@@ -285,10 +279,25 @@ font-weight: 900;
 line-height: 36px;
 border-radius: 70px;
 background-color: #ED1C24;
-margin-bottom: 80px;
+
+margin-top:32px;
 
     @media screen and (min-width: 1200px){
       display: none;
+    }
+  }
+
+  &__holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:48px;
+    margin-top: 48px;
+
+    @media screen and (min-width: 1200px){
+      margin-top: 79px;
+      gap:135px;
     }
   }
 }
