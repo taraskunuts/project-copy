@@ -8,6 +8,11 @@
   line-height: normal;
 }
 
+.work {
+  padding-top: 128px;
+  padding-bottom: 150px;
+}
+
 .work-text {
   color: #221112;
   text-align: center;
@@ -38,17 +43,72 @@
 }
 
 .work-btn {
-  display: flex;
+  display: block;
   height: 80px;
   width: 370px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 8px;
   border-radius: 70px;
   background: #ed1c24;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.work-button {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 36px; /* 163.636% */
 }
 
 .work {
-  outline: solid palevioletred;
+  background-image: url(https://www.google.com/imgres?q=foyo&imgurl=https%3A%2F%2Fstatic-cse.canva.com%2Fblob%2F847132%2Fpaulskorupskas7KLaxLbSXAunsplash2.jpg&imgrefurl=https%3A%2F%2Fwww.canva.com%2Fru_ru%2Fobuchenie%2Fidei-dlya-foto%2F&docid=qv3bYgAKOmFK9M&tbnid=Pc9kPvNQkyg4iM&vet=12ahUKEwjKyr2FxMeIAxX-SPEDHR3VCnwQM3oECBwQAA..i&w=1920&h=1280&hcb=2&ved=2ahUKEwjKyr2FxMeIAxX-SPEDHR3VCnwQM3oECBwQAA);
 }
+
+.work-item {
+  border-radius: 4px;
+  border: dashed #eed7d8;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.work-img {  
+width: 115px;
+height: 115px;
+flex-shrink: 0;
+}
+
+.work-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.work-text {
+  padding-bottom: 50px;
+}
+
+.place1 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.place2 {
+  padding-top: 60px;
+  padding-bottom: 62px;
+}
+.place3 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.place4 {
+  padding-top: 60px;
+  padding-bottom: 62px;
+}
+
+// .work-button-box {
+//   display: flex;
+//   justify-content: center;
+// }
