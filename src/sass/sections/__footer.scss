@@ -1,51 +1,105 @@
 .footer {
     background-color: $footer-background;
-    padding-top: 122px;
-    padding-bottom: 12px;
+    padding-top: 42px;
+    padding-bottom: 7px;
+
+    @media screen and (min-width: 1200px) {
+       padding-top: 122px;
+    padding-bottom: 12px; 
+    }
 }
 
 .footer-box {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.footer-text-box {
+    max-width: 250px;
+
+    @media screen and (min-width: 1200px) {
+        max-width: 300px;
+    }
 }
 
 .footer-title {
     color: $regular-background;
     font-family: Montserrat;
-    font-size: 63px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 900;
     line-height: 98px;
     /* 155.556% */
-    margin-bottom: 27px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 63px;
+        margin-bottom: 27px;
+    }
 }
 
 .footer-text {
     color: $regular-background;
     font-family: Montserrat;
-    font-size: 26px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 47px;
-    /* 180.769% */
+    line-height: 26px;
+    text-align: center;
+
+    /* 162.5% */
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 47px;
+        /* 180.769% */
+    }
+
 }
 
 .footer-title-2 {
     color: $regular-background;
     font-family: Montserrat;
-    font-size: 52px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 700;
-    line-height: 66px;
-    /* 126.923% */
+    line-height: 50px;
+    /* 192.308% */
+
+    @media screen and (min-width: 1200px) {
+
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 66px;
+        /* 126.923% */
+    }
 }
 
 .footer-box-1 {
-    max-width: 370px;
-    margin-right: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width:1200px) {
+        max-width: 370px;
+        margin-right: 230px;
+    }
 }
 
 .footer-box-2 {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .footer-box-3 {
@@ -63,4 +117,14 @@
     font-weight: 400;
     line-height: 47px;
     /* 293.75% */
+}
+
+.footer-box-4 {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: start;
+    }
 }
