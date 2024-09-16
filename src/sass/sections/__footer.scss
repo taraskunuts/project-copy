@@ -1,0 +1,66 @@
+.footer {
+    background-color: $footer-background;
+    padding-top: 122px;
+    padding-bottom: 12px;
+}
+
+.footer-box {
+    display: flex;
+}
+
+.footer-title {
+    color: $regular-background;
+    font-family: Montserrat;
+    font-size: 63px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 98px;
+    /* 155.556% */
+    margin-bottom: 27px;
+}
+
+.footer-text {
+    color: $regular-background;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 47px;
+    /* 180.769% */
+}
+
+.footer-title-2 {
+    color: $regular-background;
+    font-family: Montserrat;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 66px;
+    /* 126.923% */
+}
+
+.footer-box-1 {
+    max-width: 370px;
+    margin-right: 230px;
+}
+
+.footer-box-2 {
+    margin-top: 20px;
+}
+
+.footer-box-3 {
+    border-top: 1px solid $regular-background;
+    width: 100%;
+    opacity: 0.1;
+    margin-top: 66px;
+}
+
+.footer-text-2 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 47px;
+    /* 293.75% */
+}
