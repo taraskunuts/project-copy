@@ -1,52 +1,73 @@
 <section class="certify">
   <div class="container">
     <div class="certify-box">
+      <picture class="certify-pic">
+        <source
+          media="(max-width:1199px)"
+          srcset="
+            ./images/certify-images/сертіфікат2mobile1x.webp 1x,
+            ./images/certify-images/сертіфікат2mobile2x.webp 2x
+          "
+        />
+        <source
+          media="(min-width:1200px)"
+          srcset="
+            ./images/certify-images/сертіфікат1desktop1x.webp 1x,
+            ./images/certify-images/сертіфікат1desktop2x.webp 2x
+          "
+        />
+        <img
+          class="certify-img"
+          src="../images/certify-images/сертіфікат1mobile.webp"
+          alt=""
+        />
+      </picture>
       <div class="certify-boxx">
-      <h2 class="certify-tittle">
-        Сертифікат на групову поїздку за кордон для вашої дитини
-      </h2>
-      <p class="certify-text">
-        чудовий спосіб висловити турботу, обрати корисний подарунок, який
-        залишить враження на все життя!
-      </p>
+        <h2 class="certify-tittle">
+          Сертифікат на групову поїздку за кордон для вашої дитини
+        </h2>
+        <p class="certify-text">
+          чудовий спосіб висловити турботу, обрати корисний подарунок, який
+          залишить враження на все життя!
+        </p>
+      </div>
     </div>
-    <picture>
-      <source media="(max-width:1199px)"
-      srcset="./images/certify-images/сертіфікат2mobile1x.webp 1x, ./images/certify-images./сертіфікат1desktop2x.webp 2x">
-      <source
-      media="(min-width:1200px)"
-      srcset="./images/certify-images/сертіфікат1desktop1x.webp 1x, ./images/certify-images/сертіфікат1desktop2x.webp 2x"
-    />
-      <img
-        class="certify-img"
-        src="../images/certify-images/сертіфікат1mobile.webp"
-        alt=""
-      />
-    </picture>
-    </div>
-    <ul class="certify-list">
-      <li class="certify-item">
-        <label class="certify-label">
-          <input placeholder="Ваше ім'я" class="certify-form" type="text" />
-        </label>
-      </li>
-      <li class="certify-item">
-        <label class="certify-label">
-          <input
-            placeholder="Номер телефону"
-            class="certify-form"
-            type="text"
-          />
-        </label>
-      </li>
-      <li class="certify-item">
-        <label class="certify-label">
-          <input placeholder="E-Mail" class="certify-form" type="text" />
-        </label>
-      </li>
-      <li class="certify-item">
-        <button class="certify-btn">Хочу сертифікат</button>
-      </li>
-    </ul>
+    <form >
+      <ul class="certify-list">
+        <li class="certify-item">
+          <label class="certify-label">
+            <input
+              required
+              placeholder="Ваше ім'я"
+              class="certify-form"
+              type="text"
+            />
+          </label>
+        </li>
+        <li class="certify-item">
+          <label class="certify-label">
+            <input
+              required
+              placeholder="Номер телефону"
+              class="certify-form"
+              type="text"
+            />
+          </label>
+        </li>
+        <li class="certify-item">
+          <label class="certify-label">
+            <input
+              required
+              placeholder="E-Mail"
+              class="certify-form"
+              type="text"
+            />
+          </label>
+        </li>
+        <li class="certify-item">
+          <button class="certify-btn" type="submit">Хочу сертифікат</button>
+        </li>
+      </ul>
+    </form>
   </div>
 </section>
