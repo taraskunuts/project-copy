@@ -18,6 +18,7 @@
       font-style: normal;
       font-weight: 700;
       line-height: normal;
+      margin-bottom: 10px;
 
 
       @media screen and (min-width: 1200px) {
@@ -27,6 +28,7 @@
          font-style: normal;
          font-weight: 700;
          line-height: normal;
+         margin-bottom: 14px;
       }
    }
 
@@ -99,8 +101,8 @@
    }
 
    &__euro {
-      padding-top: 48px;
-      padding-left: 45px;
+      margin-top: 48px;
+      margin-left: 43px;
 
 
       @media screen and (min-width: 1200px) {
@@ -116,7 +118,8 @@
       border-radius: 26px;
       width: 284px;
       height: 310px;
-      margin-right: 12px;
+      margin-left: auto;
+      margin-right: auto;
       margin-top: 45px;
 
       @media screen and (min-width: 1200px) {
@@ -197,38 +200,34 @@
       }
    }
 
-   &__ball1 {
-      width: 63px;
-      height: 58px;
+   &__ball2 {
       position: absolute;
-      padding-top: 188px;
-      padding-left: 30px;
+      padding-top: 138px;
 
       @media screen and (min-width: 1200px) {
          width: 199px;
          height: 180px;
-         padding-top: 480px;
+         padding-top: 380px;
       }
    }
 
-   &__ball2 {
-      width: 42px;
-      height: 36px;
-
+   &__ball1 {
       position: absolute;
-      padding-top: 164px;
-      padding-left: 32px;
+      padding-top: 114px;
 
       @media screen and (min-width: 1200px) {
          width: 126px;
          height: 112px;
-         padding-top: 420px;
+         padding-top: 330px;
       }
    }
 
    &__images1 {
       position: relative;
-      margin-right: 100px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 20px;
+      margin-bottom: 46px;
    }
 
 
