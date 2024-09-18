@@ -1,18 +1,55 @@
 .hero {
-    background-color: red;
-    padding-top: 275px;
-    padding-bottom: 305px;
+    padding-top: 100px;
+    padding-bottom: 26px;
     position: relative;
+    background-image: url(.../images/hero-images/mobile/background-1x.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ED1C24;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(.../images/hero-images/mobile/background-2x.webp), ;
+    }
+
+    @media screen and (min-width:1200px) {
+        background-image: linear-gradient(rgba(237, 28, 36, 100), rgba(237, 28, 36, 100), url(.../images/hero-images/desctop/background-1x.webp), url(.../images/hero-images/desctop/girl-1x.webp), url(.../images/hero-images/desctop/map-1x.webp), url(.../images/hero-images/desctop/present-1x.webp));
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(.../images/hero-images/desctop/background-2x.webp), url(.../images/hero-images/desctop/girl-2x.webp), url(.../images/hero-images/desctop/map-2x.webp), url(.../images/hero-images/desctop/present-2x.webp);
+        }
+
+        padding-top: 275px;
+        padding-bottom: 305px;
+    }
 }
 
 .hero-box {
-    margin-left: 375px;
+    margin-right: 10px;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 375px;
+    }
 }
 
 .hero-icon {
     position: absolute;
-    left: 40px;
-    top: 30px;
+    width: 50px;
+    height: 50px;
+    left: 10px;
+    top: 20px;
+
+    @media screen and (min-width: 1200px) {
+        left: 40px;
+        top: 30px;
+    }
 }
 
 .hero-title-box {
@@ -23,32 +60,52 @@
 .hero-title {
     color: #FFF;
     font-family: "Montserrat Alternates";
-    font-size: 52px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
+    max-width: 300px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 52px;
+    }
 }
 
 .hero-text-box {
-    max-width: 669px;
+    max-width: 300px;
+
+    @media screen and (min-width: 1200px) {
+       max-width: 669px; 
+    }
 }
 
 .hero-text {
     color: #FFF;
     font-family: Montserrat;
-    font-size: 22px;
+    font-size: 16px;
+    line-height: 26px;
     font-style: normal;
     font-weight: 600;
-    line-height: 44px;
+    
+
+    @media screen and (min-width: 1200px) {
+        font-size: 22px;
+        line-height: 44px;
+    }
 }
 
 .hero-second-text {
     color: #FFF;
     font-family: Montserrat;
-    font-size: 22px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 900;
-    line-height: 35px;
+    line-height: 26px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 22px;
+        line-height: 35px;
+    }
 }
 
 .hero-button {
@@ -71,4 +128,166 @@
     background: #FFF;
     box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.40);
     margin-top: 93px;
+}
+
+/*footer*/
+
+.footer {
+    background-color: $footer-background;
+    padding-top: 42px;
+    padding-bottom: 7px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 122px;
+        padding-bottom: 12px;
+    }
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.footer-text-box {
+    max-width: 250px;
+
+    @media screen and (min-width: 1200px) {
+        max-width: 300px;
+    }
+}
+
+.footer-title {
+    color: $regular-background;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 98px;
+    /* 155.556% */
+
+    @media screen and (min-width: 1200px) {
+        font-size: 63px;
+        margin-bottom: 27px;
+    }
+}
+
+.footer-text {
+    color: $regular-background;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+
+    /* 162.5% */
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 47px;
+        /* 180.769% */
+    }
+
+}
+
+.footer-title-2 {
+    color: $regular-background;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    /* 192.308% */
+
+    @media screen and (min-width: 1200px) {
+
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 66px;
+        /* 126.923% */
+    }
+}
+
+.footer-box-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width:1200px) {
+        max-width: 370px;
+        margin-right: 230px;
+    }
+}
+
+.footer-box-2 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-box-3 {
+    border-top: 1px solid $regular-background;
+    width: 100%;
+    opacity: 0.1;
+    margin-top: 66px;
+}
+
+.footer-text-2 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 47px;
+    /* 293.75% */
+}
+
+.footer-box-4 {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: start;
+    }
+}
+
+/*modal*/
+.backdrop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    backdrop-filter: 1px;
+    /*transition: opacity 250ms linear , visibility 250ms linear;*/
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-property: opacity visibility;
+}
+
+.modal-section {
+    width: 1920px;
+    width: 100%;
+    height: 100%;
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
 }
