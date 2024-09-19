@@ -1,11 +1,29 @@
 <section class="impression">
   <div class="container impression__container">
     <h1 class="impression__title">Враження — найкращий подарунок!</h1>
-    <img
-      class="impression__box-image"
-      src="./images/impression-images/box.webp"
-      alt="box"
-    />
+
+    <picture>
+      <source
+        media="(max-width: 1199px)"
+        srcset="
+          ./images/impression-images/mobile/gift@1x.webp 1x,
+          ./images/impression-images/mobile/gift@2x.webp 2x
+        "
+      />
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/impression-images/dekstop/gift@1x.webp 1x,
+          ./images/impression-images/dekstop/gift@2x.webp 2x
+        "
+      />
+      <img
+        class="impression__box-image"
+        src="./images/impression-images/box.webp"
+        alt="box"
+      />
+    </picture>
+
     <div class="impression__travelholder">
       <p class="impression__text">
         Тільки уявіть — ваша дитина знаходить під ялинкою яскравий бокс,
@@ -15,11 +33,28 @@
       <ul class="impression__holder">
         <li class="impression__travel-top">
           <h2 class="impression__subtitle">Велика Британія</h2>
-          <img
+          <picture>
+            <source
+              media="(max-width: 1199px)"
+              srcset="
+                ./images/impression-images/mobile/britian@1x.webp 1x,
+                ./images/impression-images/mobile/britian@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/impression-images/dekstop/britian@1x.webp 1x,
+                ./images/impression-images/dekstop/britian@2x.webp 2x
+              "
+            />
+            <img
             class="impression__image"
             src="./images/impression-images/Britian.webp"
             alt="Britian"
           />
+          </picture>
+          
           <ul class="impression__travelsholser">
             <li class="impression__subtext">
               <p class="impression__travels">Лондон</p>
@@ -55,11 +90,27 @@
         </li>
         <li class="impression__travel-ireland">
           <h2 class="impression__subtitle">Ірландія</h2>
-          <img
+          <picture>
+            <source
+              media="(max-width: 1199px)"
+              srcset="
+                ./images/impression-images/mobile/ireland@1x.webp 1x,
+                ./images/impression-images/mobile/ireland@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/impression-images/dekstop/ireland@1x.webp 1x,
+                ./images/impression-images/dekstop/ireland@2x.webp 2x
+              "
+            />
+            <img
             class="impression__image"
             src="./images/impression-images/Ireland.webp"
             alt="Ireland"
           />
+          </picture>
           <ul class="impression__travelsholser">
             <li class="impression__subtext">
               <p class="impression__travels">Дублін</p>
@@ -71,11 +122,21 @@
         </li>
         <li class="impression__travel">
           <h2 class="impression__subtitle">США</h2>
-          <img
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/impression-images/dekstop/usa@1x.webp 1x,
+                ./images/impression-images/dekstop/usa@2x.webp 2x
+              "
+            />
+             <img
             class="impression__image"
             src="./images/impression-images/USA.webp"
             alt="USA"
           />
+          </picture>
+         
           <ul class="impression__travelsholser">
             <li class="impression__subtext">
               <p class="impression__travels">Нью-Йорк</p>
@@ -108,11 +169,20 @@
         </li>
         <li class="impression__travel">
           <h2 class="impression__subtitle">Країни Європи</h2>
-          <img
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/impression-images/dekstop/europa@1x.webp 1x,
+                ./images/impression-images/dekstop/europa@2x.webp 2x
+              "
+            />
+            <img
             class="impression__image"
             src="./images/impression-images/Europa.webp"
             alt="Europa"
           />
+          </picture>
           <ul class="impression__travelsholser">
             <li class="impression__subtext">
               <p class="impression__travels">
@@ -121,7 +191,7 @@
             </li>
             <li class="impression__subtext">
               <p class="impression__travels">
-                Мюнхен <span class="impression__span"> (Німеччина)</span>
+                Мюнхен <span class="impression__span">(Німеччина)</span>
               </p>
             </li>
             <li class="impression__subtext">
@@ -145,11 +215,21 @@
         </li>
         <li class="impression__travel">
           <h2 class="impression__subtitle">ОАЕ</h2>
-          <img
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/impression-images/dekstop/oae@1x.webp 1x,
+                ./images/impression-images/dekstop/oae@2x.webp 2x
+              "
+            />
+            <img
             class="impression__image"
             src="./images/impression-images/OAE.webp"
             alt="OAE"
           />
+          </picture>
+          
           <ul class="impression__travelsholser">
             <li class="impression__subtext">
               <p class="impression__travels">Дубай</p>
@@ -158,11 +238,21 @@
         </li>
         <li class="impression__travel-bottom">
           <h2 class="impression__subtitle">Мексика</h2>
-          <img
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/impression-images/dekstop/cancun@1x.webp 1x,
+                ./images/impression-images/dekstop/cancun@2x.webp 2x
+              "
+            />
+            <img
             class="impression__image"
             src="./images/impression-images/Mexica.webp"
             alt="Mexica"
           />
+          </picture>
+          
           <ul class="impression__travelsholser">
             <li class="impression__subtext">
               <p class="impression__travels">Канкун</p>
@@ -172,6 +262,5 @@
       </ul>
     </div>
     <button class="impression__button">Більше</button>
-    <div class="impression__bottom"></div>
   </div>
 </section>

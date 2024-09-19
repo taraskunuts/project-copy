@@ -7,14 +7,27 @@
   background-color: $modded-background;
   padding-bottom: 80px;
   padding-top: 48px;
-  background-position: bottom;
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-image: url("../images/impression-images/dekstop/background-dekstop@1x.webp");
+  
 
   @media screen and (min-width: 1200px) {
+    width: 100%;
     padding-bottom: 148px;
     padding-top: 123px;
+    background-position-y: 780px;
+    background-position-x: -100px;
+  // background-position: top 780px right 100px;
+  background-size: 109%;
+  background-repeat: no-repeat;
+  background-image: url("../images/impression-images/dekstop/background-dekstop@1x.webp"),
+ url("../images/impression-images/background.webp");
+ @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-size: 109%;
+  background-repeat: no-repeat;
+  background-image: url("../images/impression-images/dekstop/background-dekstop@2x.webp"),
+ url("../images/impression-images/background.webp");
+      }
   }
 
   &__container {
