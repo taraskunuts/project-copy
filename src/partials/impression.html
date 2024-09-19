@@ -1,168 +1,266 @@
 <section class="impression">
   <div class="container impression__container">
-  <h1 class="impression__title">Враження — найкращий подарунок!</h1>
-  <img
-    class="impression__box-image"
-    src="./images/impression-images/box.webp"
-    alt="box"
-  />
-  <div class="impression__travelholder">
-    <p class="impression__text">
-      Тільки уявіть — ваша дитина знаходить під ялинкою яскравий бокс, відкриває
-      в очікуванні дива, та знаходить там подорож, що запам'ятається на все
-      життя. Вам потрібно тільки обрати напрямок поїздки.
-    </p>
-    <ul class="impression__holder">
-    <li class="impression__travel-top">
-      <h2 class="impression__subtitle">Велика Британія</h2>
-      <img
-        class="impression__image"
-        src="./images/impression-images/Britian.webp"
-        alt="Britian"
+    <h1 class="impression__title">Враження — найкращий подарунок!</h1>
+
+    <picture>
+      <source
+        media="(max-width: 1199px)"
+        srcset="
+          ./images/impression-images/mobile/gift@1x.webp 1x,
+          ./images/impression-images/mobile/gift@2x.webp 2x
+        "
       />
-      <ul class="impression__travelsholser">
-        <li class="impression__subtext">
-          <p class="impression__travels">Лондон</p>
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/impression-images/dekstop/gift@1x.webp 1x,
+          ./images/impression-images/dekstop/gift@2x.webp 2x
+        "
+      />
+      <img
+        class="impression__box-image"
+        src="./images/impression-images/box.webp"
+        alt="box"
+      />
+    </picture>
+
+    <div class="impression__travelholder">
+      <p class="impression__text">
+        Тільки уявіть — ваша дитина знаходить під ялинкою яскравий бокс,
+        відкриває в очікуванні дива, та знаходить там подорож, що запам'ятається
+        на все життя. Вам потрібно тільки обрати напрямок поїздки.
+      </p>
+      <ul class="impression__holder">
+        <li class="impression__travel-top">
+          <h2 class="impression__subtitle">Велика Британія</h2>
+          <picture>
+            <source
+              media="(max-width: 1199px)"
+              srcset="
+                ./images/impression-images/mobile/britian@1x.webp 1x,
+                ./images/impression-images/mobile/britian@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/impression-images/dekstop/britian@1x.webp 1x,
+                ./images/impression-images/dekstop/britian@2x.webp 2x
+              "
+            />
+            <img
+            class="impression__image"
+            src="./images/impression-images/Britian.webp"
+            alt="Britian"
+          />
+          </picture>
+          
+          <ul class="impression__travelsholser">
+            <li class="impression__subtext">
+              <p class="impression__travels">Лондон</p>
+            </li>
+            <li class="impression__subtext">
+              <p class="impression__travels">Оксфорд</p>
+            </li>
+            <li class="impression__subtext">
+              <p class="impression__travels">Кембридж</p>
+            </li>
+            <li class="impression__subtext">
+              <p class="impression__travels">Віндзор</p>
+            </li>
+            <li class="impression__subtext">
+              <p class="impression__travels">Бат</p>
+            </li>
+            <li class="impression__subtext">
+              <p class="impression__travels">Дувр</p>
+            </li>
+            <li class="impression__subtext">
+              <p class="impression__travels">Манчестер</p>
+            </li>
+            <li class="impression__subtext">
+              <p class="impression__travels">Йорк</p>
+            </li>
+            <li class="impression__subtext">
+              <p class="impression__travels">Стірлінг</p>
+            </li>
+            <li class="impression__subtext">
+              <p class="impression__travels">Уормінстер</p>
+            </li>
+          </ul>
         </li>
-        <li class="impression__subtext">
-          <p class="impression__travels">Оксфорд</p>
+        <li class="impression__travel-ireland">
+          <h2 class="impression__subtitle">Ірландія</h2>
+          <picture>
+            <source
+              media="(max-width: 1199px)"
+              srcset="
+                ./images/impression-images/mobile/ireland@1x.webp 1x,
+                ./images/impression-images/mobile/ireland@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/impression-images/dekstop/ireland@1x.webp 1x,
+                ./images/impression-images/dekstop/ireland@2x.webp 2x
+              "
+            />
+            <img
+            class="impression__image"
+            src="./images/impression-images/Ireland.webp"
+            alt="Ireland"
+          />
+          </picture>
+          <ul class="impression__travelsholser">
+            <li class="impression__subtext">
+              <p class="impression__travels">Дублін</p>
+            </li>
+            <li class="impression__subtext">
+              <p class="impression__travels">Мейнут</p>
+            </li>
+          </ul>
         </li>
-        <li class="impression__subtext">
-          <p class="impression__travels">Кембридж</p>
+        <li class="impression__travel">
+          <h2 class="impression__subtitle">США</h2>
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/impression-images/dekstop/usa@1x.webp 1x,
+                ./images/impression-images/dekstop/usa@2x.webp 2x
+              "
+            />
+             <img
+            class="impression__image"
+            src="./images/impression-images/USA.webp"
+            alt="USA"
+          />
+          </picture>
+         
+          <ul class="impression__travelsholser">
+            <li class="impression__subtext">
+              <p class="impression__travels">Нью-Йорк</p>
+            </li>
+            <li class="impression__subtext">
+              <p class="impression__travels">Лос-Анджелес</p>
+            </li>
+            <li class="impression__subtext">
+              <p class="impression__travels">Маямі</p>
+            </li>
+            <li class="impression__subtext">
+              <p class="impression__travels">Вашингтон</p>
+            </li>
+            <li class="impression__subtext">
+              <p class="impression__travels">Сан-Дієго</p>
+            </li>
+            <li class="impression__subtext">
+              <p class="impression__travels">Сан-Франциско</p>
+            </li>
+            <li class="impression__subtext">
+              <p class="impression__travels">Чікаго</p>
+            </li>
+            <li class="impression__subtext">
+              <p class="impression__travels">Лас-Вегас</p>
+            </li>
+            <li class="impression__subtext">
+              <p class="impression__travels">Гонолулу</p>
+            </li>
+          </ul>
         </li>
-        <li class="impression__subtext">
-          <p class="impression__travels">Віндзор</p>
+        <li class="impression__travel">
+          <h2 class="impression__subtitle">Країни Європи</h2>
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/impression-images/dekstop/europa@1x.webp 1x,
+                ./images/impression-images/dekstop/europa@2x.webp 2x
+              "
+            />
+            <img
+            class="impression__image"
+            src="./images/impression-images/Europa.webp"
+            alt="Europa"
+          />
+          </picture>
+          <ul class="impression__travelsholser">
+            <li class="impression__subtext">
+              <p class="impression__travels">
+                Ніцца<span class="impression__span">(Франція)</span>
+              </p>
+            </li>
+            <li class="impression__subtext">
+              <p class="impression__travels">
+                Мюнхен <span class="impression__span">(Німеччина)</span>
+              </p>
+            </li>
+            <li class="impression__subtext">
+              <p class="impression__travels">
+                Монтре та Енгельберг
+                <span class="impression__span">(Швейцарія)</span>
+              </p>
+            </li>
+            <li class="impression__subtext">
+              <p class="impression__travels">
+                Айя-Напа <span class="impression__span">(Кіпр)</span>
+              </p>
+            </li>
+            <li class="impression__subtext">
+              <p class="impression__travels">
+                Барселона та Лас-Пальмас-де-Гран-Канарія
+                <span class="impression__span">(Іспанія)</span>
+              </p>
+            </li>
+          </ul>
         </li>
-        <li class="impression__subtext">
-          <p class="impression__travels">Бат</p>
+        <li class="impression__travel">
+          <h2 class="impression__subtitle">ОАЕ</h2>
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/impression-images/dekstop/oae@1x.webp 1x,
+                ./images/impression-images/dekstop/oae@2x.webp 2x
+              "
+            />
+            <img
+            class="impression__image"
+            src="./images/impression-images/OAE.webp"
+            alt="OAE"
+          />
+          </picture>
+          
+          <ul class="impression__travelsholser">
+            <li class="impression__subtext">
+              <p class="impression__travels">Дубай</p>
+            </li>
+          </ul>
         </li>
-        <li class="impression__subtext">
-          <p class="impression__travels">Дувр</p>
-        </li>
-        <li class="impression__subtext">
-          <p class="impression__travels">Манчестер</p>
-        </li>
-        <li class="impression__subtext">
-          <p class="impression__travels">Йорк</p>
-        </li>
-        <li class="impression__subtext">
-          <p class="impression__travels">Стірлінг</p>
-        </li>
-        <li class="impression__subtext">
-          <p class="impression__travels">Уормінстер</p>
+        <li class="impression__travel-bottom">
+          <h2 class="impression__subtitle">Мексика</h2>
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/impression-images/dekstop/cancun@1x.webp 1x,
+                ./images/impression-images/dekstop/cancun@2x.webp 2x
+              "
+            />
+            <img
+            class="impression__image"
+            src="./images/impression-images/Mexica.webp"
+            alt="Mexica"
+          />
+          </picture>
+          
+          <ul class="impression__travelsholser">
+            <li class="impression__subtext">
+              <p class="impression__travels">Канкун</p>
+            </li>
+          </ul>
         </li>
       </ul>
-    </li>
-    <li class="impression__travel-ireland">
-      <h2 class="impression__subtitle">Ірландія</h2>
-      <img
-        class="impression__image"
-        src="./images/impression-images/Ireland.webp"
-        alt="Ireland"
-      />
-      <ul class="impression__travelsholser">
-        <li class="impression__subtext">
-          <p class="impression__travels">Дублін</p>
-        </li>
-        <li class="impression__subtext">
-          <p class="impression__travels">Мейнут</p>
-        </li>
-      </ul>
-    </li>
-    <li class="impression__travel">
-      <h2 class="impression__subtitle">США</h2>
-      <img
-        class="impression__image"
-        src="./images/impression-images/USA.webp"
-        alt="USA"
-      />
-      <ul class="impression__travelsholser">
-        <li class="impression__subtext">
-          <p class="impression__travels">Нью-Йорк</p>
-        </li>
-        <li class="impression__subtext">
-          <p class="impression__travels">Лос-Анджелес</p>
-        </li>
-        <li class="impression__subtext">
-          <p class="impression__travels">Маямі</p>
-        </li>
-        <li class="impression__subtext">
-          <p class="impression__travels">Вашингтон</p>
-        </li>
-        <li class="impression__subtext">
-          <p class="impression__travels">Сан-Дієго</p>
-        </li>
-        <li class="impression__subtext">
-          <p class="impression__travels">Сан-Франциско</p>
-        </li>
-        <li class="impression__subtext">
-          <p class="impression__travels">Чікаго</p>
-        </li>
-        <li class="impression__subtext">
-          <p class="impression__travels">Лас-Вегас</p>
-        </li>
-        <li class="impression__subtext">
-          <p class="impression__travels">Гонолулу</p>
-        </li>
-      </ul>
-    </li>
-    <li class="impression__travel">
-      <h2 class="impression__subtitle">Країни Європи</h2>
-      <img
-        class="impression__image"
-        src="./images/impression-images/Europa.webp"
-        alt="Europa"
-      />
-      <ul class="impression__travelsholser">
-        <li class="impression__subtext">
-          <p class="impression__travels">Ніцца<span class="impression__span">(Франція)</span></p>
-        </li>
-        <li class="impression__subtext">
-          <p class="impression__travels">Мюнхен <span class="impression__span"> (Німеччина)</span></p>
-        </li>
-        <li class="impression__subtext">
-          <p class="impression__travels">Монтре та Енгельберг <span class="impression__span">(Швейцарія)</span></p>
-        </li>
-        <li class="impression__subtext">
-          <p class="impression__travels">Айя-Напа <span class="impression__span">(Кіпр)</span></p>
-        </li>
-        <li class="impression__subtext">
-          <p class="impression__travels">
-            Барселона та Лас-Пальмас-де-Гран-Канарія <span class="impression__span">(Іспанія)</span>
-          </p>
-        </li>
-      </ul>
-    </li>
-    <li class="impression__travel">
-      <h2 class="impression__subtitle">ОАЕ</h2>
-      <img
-        class="impression__image"
-        src="./images/impression-images/OAE.webp"
-        alt="OAE"
-      />
-      <ul class="impression__travelsholser">
-        <li class="impression__subtext">
-          <p class="impression__travels">Дубай</p>
-        </li>
-      </ul>
-    </li>
-    <li class="impression__travel-bottom">
-      <h2 class="impression__subtitle">Мексика</h2>
-      <img
-        class="impression__image"
-        src="./images/impression-images/Mexica.webp"
-        alt="Mexica"
-      />
-      <ul class="impression__travelsholser">
-        <li class="impression__subtext">
-          <p class="impression__travels">Канкун</p>
-        </li>
-      </ul>
-      
-    </li>
-  </ul>
+    </div>
+    <button class="impression__button">Більше</button>
   </div>
-  <button class="impression__button">Більше</button>
-  <div class="impression__bottom"></div>
-</div>
 </section>
