@@ -103,12 +103,12 @@
    &__euro {
       margin-top: 48px;
       margin-left: 43px;
-
+      
 
       @media screen and (min-width: 1200px) {
-         padding-top: 58px;
-      padding-left: 182px;
-      padding-right: 183px;
+         margin-top: 58px;
+         margin-left: 182px;
+         margin-right: 183px;
       }
 
    }
@@ -185,7 +185,7 @@
 
       @media screen and (min-width: 1200px) {
          width: 634px;
-         padding-top: 180px;
+         padding-top: 295px;
       }
 
    }
@@ -226,8 +226,8 @@
       position: relative;
       margin-right: auto;
       margin-left: auto;
-      padding-top: 20px;
-      margin-bottom: 46px;
+      padding-top: 205px;
+      margin-right: 100px;
    }
 
 
