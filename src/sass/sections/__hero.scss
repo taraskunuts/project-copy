@@ -12,7 +12,7 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: linear-gradient(rgba(237, 28, 36, 0.5), rgba(237, 28, 36, 0.5)), url(../images/hero-images/mobile/mobile-background-2x.webp), url(../images/hero-images/mobile/mobile-girl-2x.webp);
+        background-image: linear-gradient(rgba(237, 28, 36, 0.5), rgba(237, 28, 36, 0.5)), url(../images/hero-images/mobile/mobile-background-2x.webp), url(../images/hero-images/mobile/mobile-girl-2x.webp);
     }
 
     @media screen and (min-width:1200px) {
@@ -24,7 +24,7 @@
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: linear-gradient(rgba(237, 28, 36, 0.5), rgba(237, 28, 36, 0.5)), url(../images/hero-images/desctop/map-2x.webp), url(../images/hero-images/desctop/present-2x.webp), url(../images/hero-images/desctop/girl-2x.webp), url(../images/hero-images/desctop/background-2x.webp);
+            background-image: linear-gradient(rgba(237, 28, 36, 0.5), rgba(237, 28, 36, 0.5)), url(../images/hero-images/desctop/map-2x.webp), url(../images/hero-images/desctop/present-2x.webp), url(../images/hero-images/desctop/girl-2x.webp), url(../images/hero-images/desctop/background-2x.webp);
         }
 
         padding-top: 275px;
@@ -33,7 +33,7 @@
 }
 
 .background {
-    background-image: url(../../images/hero-images/mobile/mobile-background2-1x.webp);
+    background-image: url(../images/hero-images/mobile/mobile-background2-1x.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,7 +41,20 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../../images/hero-images/mobile/mobile-background2-2x.webp);
+        background-image: url(../images/hero-images/mobile/mobile-background2-2x.webp);
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: url(../images/hero-images/desctop/background2-1x.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/hero-images/mobile/mobile-background2-2x.webp);
+        }
     }
 }
 
