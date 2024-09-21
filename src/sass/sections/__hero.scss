@@ -4,20 +4,19 @@
     padding-left: 2px;
     padding-bottom: 18px;
     position: relative;
-    background-image: linear-gradient(rgba(237, 28, 36, 0.5), rgba(237, 28, 36, 0.5)), url(../../images/hero-images/desctop/background-1x.webp);
+    background-image: linear-gradient(rgba(237, 28, 36, 0.5), rgba(237, 28, 36, 0.5)), url(../images/hero-images/mobile/mobile-background-1x.webp), url(../images/hero-images/mobile/mobile-girl-1x.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #ED1C24;
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: linear-gradient(rgba(237, 28, 36, 0.5), rgba(237, 28, 36, 0.5)), url(../../images/hero-images/desctop/background-2x.webp);
+    background-image: linear-gradient(rgba(237, 28, 36, 0.5), rgba(237, 28, 36, 0.5)), url(../images/hero-images/mobile/mobile-background-2x.webp), url(../images/hero-images/mobile/mobile-girl-2x.webp);
     }
 
     @media screen and (min-width:1200px) {
-        background-image: linear-gradient(rgba(237, 28, 36, 0.5), rgba(237, 28, 36, 0.5), url(../../images/hero-images/desctop/background-1x.webp), url(../../images/hero-images/desctop/girl-1x.webp), url(../../images/hero-images/desctop/map-1x.webp), url(../../images/hero-images/desctop/present-1x.webp));
+        background-image: linear-gradient(rgba(237, 28, 36, 0.5), rgba(237, 28, 36, 0.5)), url(../images/hero-images/desctop/background-1x.webp), url(../images/hero-images/desctop/girl-1x.webp), url(../images/hero-images/desctop/map-1x.webp), url(../images/hero-images/desctop/present-1x.webp);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -25,11 +24,24 @@
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: linear-gradient(rgba(237, 28, 36, 0.5), rgba(237, 28, 36, 0.5)), url(../../images/hero-images/desctop/background-2x.webp), url(../../images/hero-images/desctop/girl-2x.webp), url(../../images/hero-images/desctop/map-2x.webp), url(../../images/hero-images/desctop/present-2x.webp),;
+        background-image: linear-gradient(rgba(237, 28, 36, 0.5), rgba(237, 28, 36, 0.5)), url(../images/hero-images/desctop/background-2x.webp), url(../images/hero-images/desctop/girl-2x.webp), url(../images/hero-images/desctop/map-2x.webp), url(../images/hero-images/desctop/present-2x.webp);
         }
 
         padding-top: 275px;
         padding-bottom: 305px;
+    }
+}
+
+.background {
+    background-image: url(../../images/hero-images/mobile/mobile-background2-1x.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../../images/hero-images/mobile/mobile-background2-2x.webp);
     }
 }
 
@@ -157,16 +169,17 @@
     }
 }
 
-.footer-box {
+.box-footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin-left: 10px;
     padding: 42px 10px 7px 10px;
 
     @media screen and (min-width: 1200px) {
         display: flex;
         flex-direction: row;
+        margin-left: 375px;
     }
 }
 
@@ -197,13 +210,14 @@
     }
 }
 
-.footer-text {
+.text-footer {
     color: $regular-background;
     font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
+    width: 300px;
     text-align: center;
 
     /* 162.5% */
@@ -213,6 +227,7 @@
         font-weight: 400;
         line-height: 47px;
         /* 180.769% */
+        width: 370px;
     }
 
 }
@@ -261,7 +276,7 @@
     margin-top: 66px;
 }
 
-.footer-text-2 {
+.text-2-footer {
     color: #FFF;
     font-family: Montserrat;
     font-size: 16px;
@@ -269,6 +284,11 @@
     font-weight: 400;
     line-height: 47px;
     /* 293.75% */
+    margin-left: 10px;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 375px;
+    }
 }
 
 .footer-box-4 {
@@ -293,10 +313,12 @@
     top: 0px;
     z-index: 1;
     backdrop-filter: 1px;
+    overflow-y: scroll;
+    background-color: #ED1C24;
     /*transition: opacity 250ms linear , visibility 250ms linear;*/
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
-    transition-property: opacity visibility;
+    transition-property: opacity, visibility;
 }
 
 .header-modal-section {
@@ -304,8 +326,11 @@
     width: 100%;
     height: 100%;
     position: relative;
-    background-color: blue;
-    padding: 103px 10px 0px 10px;
+    padding-top: 100px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 275px;
+    }
 }
 
 .is-hidden {
@@ -320,11 +345,14 @@
     font-size: 36px;
     font-weight: 900;
     margin-bottom: 6px;
+    margin-left: 10px;
     width: 300px;
 
     @media screen and (min-width: 1200px) {
         font-size: 78px;
-        width: 400px;
+        width: 863px;
+        margin-left: 375px;
+        margin-bottom: 23px;
     }
 }
 
@@ -336,10 +364,13 @@
     font-weight: 400;
     line-height: 26px;
     width: 275px;
+    margin-left: 10px;
 
     @media screen and (min-width: 1200px) {
         font-size: 24px;
         line-height: 35px;
+        width: 863px;
+        margin-left: 375px;
     }
 }
 
@@ -390,17 +421,18 @@
     background: #FFF;
     box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.40);
     position: relative;
-    margin-top: 53px;
+    margin-top: 227px;
     margin-bottom: 50px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10px;
 
     @media screen and (min-width: 1200px) {
         font-size: 22px;
         width: 463px;
         height: 80px;
+        margin-top: 71px;
         margin-bottom: 286px;
+        margin-left: 375px;
     }
 }
 
@@ -426,4 +458,11 @@
     left: 10px;
     width: 50px;
     height: 50px;
+
+    @media screen and (min-width: 1200px) {
+        width: 100px;
+        height: 100px;
+        left: 40px;
+        top: 30px;
+    }
 }
