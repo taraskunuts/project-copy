@@ -122,7 +122,10 @@
     font-weight: 700;
     line-height: normal;
 
+    margin-bottom: 25px;
+
     @media screen and (min-width: 1200px) {
+      margin-bottom: 0px;
       width: 830px;
       color: #221112;
       text-align: center;
@@ -202,8 +205,10 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    margin-top: 19.91px;
 
     @media screen and (min-width: 1200px) {
+      margin-top: 0px;
       min-width: 931px;
       display: flex;
       justify-content: center;
